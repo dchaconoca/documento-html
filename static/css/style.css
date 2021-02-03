@@ -1,0 +1,135 @@
+/* 
+    CSS DE UN DOCUMENTO TÉCNICO
+    Autor: Diana Chacón Ocariz
+*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+body {    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(2, 20, 102);
+    background-color: rgb(245, 245, 255);
+}
+
+p {
+    margin-bottom: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    position: fixed;
+    background-color:rgb(220, 220, 255);
+    border-right: 3px solid rgb(46, 46, 192);
+    width: 300px;
+    height: 100%;
+}
+
+#menu header {
+    margin-bottom: 8%;
+    padding-left: 2%;
+    border-bottom: 3px solid rgb(46, 46, 192);
+    line-height: 5ex;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding-left: 2%;
+    font-size: 1.3rem;
+    line-height: 3ex;
+}
+
+.nav-link:hover {
+    font-size: 1.5rem;
+}
+
+#main-doc {
+    margin-left: 315px;
+    width: 65%;
+}
+
+#main-doc li {
+    margin-left: 2rem;
+    margin-bottom: 2%;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    font-style: oblique;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.volver {
+    display: none;
+}
+
+.txt-code {
+    max-width: 95%;
+    margin-bottom: 3%;
+    background-color: rgb(220, 220, 255);
+    border-left: 5px solid rgb(46, 46, 192);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: rgb(5, 121, 5);
+}
+
+/* DISEÑO RESPONSIVO
+Cambios en caso de pantalla más pequeña */
+
+@media only screen and (max-width: 750px) {
+
+    .txt-code {
+        font-size: 1em;
+    }
+
+    #menu {
+        position: relative;
+        height:max-content;
+        width: 100%;
+    }
+
+    #menu header {
+        margin-bottom: 2%;
+        line-height: 4ex;
+    }
+
+    #navbar ul {
+        font-size: 1rem;
+    }
+    
+    #main-doc {
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 95%;
+    }
+
+    #title {
+        font-size: 1.6rem;
+    }
+
+    .section-header {
+        font-size: 1.3rem;
+    }
+
+    .volver {
+        display: block;
+        font-size: 1.1rem;
+        font-style: italic;  
+        text-align: right;
+    }
+    
+    .nav-link:hover,
+    .volver:hover {
+        font-size: 1.3rem;
+        
+    }
+   
+}
+
